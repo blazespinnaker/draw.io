@@ -1887,7 +1887,7 @@ EditorUi.prototype.initCanvas = function()
 			}
 			
 			// Zooms to mouse position if scrollbars enabled
-			if (cursorPosition != null && mxUtils.hasScrollbars(graph.container))
+			if (cursorPosition != null) // && mxUtils.hasScrollbars(graph.container))
 			{
 				var offset = mxUtils.getOffset(graph.container);
 				var dx = graph.container.offsetWidth / 2 - cursorPosition.x + offset.x;
