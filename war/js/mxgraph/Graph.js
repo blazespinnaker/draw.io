@@ -6273,7 +6273,7 @@ if (typeof mxVertexHandler != 'undefined')
 			// One finger pans (no rubberband selection) must start regardless of mouse button
 			mxPanningHandler.prototype.isPanningTrigger = function(me)
 			{
-				var evt = me.getEvent();
+				var evt = me.getEvent(); alert('test');
 				return false;
 			 	return (me.getState() == null && !mxEvent.isMouseEvent(evt)) ||
 			 		(mxEvent.isPopupTrigger(evt) && (me.getState() == null ||
