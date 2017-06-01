@@ -6274,7 +6274,7 @@ if (typeof mxVertexHandler != 'undefined')
 			mxPanningHandler.prototype.isPanningTrigger = function(me)
 			{
 				var evt = me.getEvent();
-				
+				return false;
 			 	return (me.getState() == null && !mxEvent.isMouseEvent(evt)) ||
 			 		(mxEvent.isPopupTrigger(evt) && (me.getState() == null ||
 			 		mxEvent.isControlDown(evt) || mxEvent.isShiftDown(evt)));
