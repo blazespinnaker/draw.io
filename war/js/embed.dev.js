@@ -126,7 +126,7 @@
 	{
 		mxPanningHandler.prototype.isPanningTrigger = function(me)
 		{
-			return true;
+			return false;
 		};
 	}
 	
